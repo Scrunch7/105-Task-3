@@ -128,13 +128,13 @@ public:
 class Circle : public Shapes {
 public:
 	void drawShape() {
-		cout << "       * *      \n";
-		cout << "    * * * * *   \n";
-		cout << "  * * * * * * * \n";
-		cout << "  * * * * * * * \n";
-		cout << "  * * * * * * * \n";
-		cout << "    * * * * *   \n";
-		cout << "       * *        ";
+		cout << "           ******    \n";
+		cout << "         **********  \n";
+		cout << "       **************\n";
+		cout << "       **************\n";
+		cout << "       **************\n";
+		cout << "         **********  \n";
+		cout << "           ******    ";
 	}
 	double calculatePerimeter(double radius) {
 		double result = 0;
