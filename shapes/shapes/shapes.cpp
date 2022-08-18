@@ -19,7 +19,6 @@ public:
 	Shapes() {
 		calc_result = height = width = radius = 0;
 	}
-	virtual void drawShape() = 0;
 
 	double calculatePerimeter(double height, double width) {
 		double result = 0;
@@ -161,7 +160,7 @@ void area() {
 		square.calculateArea(width, width); //squares are equal, only one value needed
 		cout << "\nThe result is: ";
 		square.giveResult();
-		cout << "square centimeters (sq.cm)\n";
+		cout << " square centimeters (sq.cm)\n";
 		break;
 
 	case RECTANGLE:
@@ -172,7 +171,7 @@ void area() {
 		rectangle.calculateArea(height, width);
 		cout << "\nThe result is: ";
 		rectangle.giveResult();
-		cout << "square centimeters (sq.cm)\n";
+		cout << " square centimeters (sq.cm)\n";
 		break;
 
 	case CIRCLE:
@@ -181,7 +180,7 @@ void area() {
 		circle.calculateArea(radius);
 		cout << "\nThe result is: ";
 		circle.giveResult();
-		cout << "square centimeters (sq.cm)\n"; 
+		cout << " square centimeters (sq.cm)\n"; 
 		break;
 
 	case TRIANGLE:
@@ -192,7 +191,7 @@ void area() {
 		triangle.calculateArea(height, width);
 		cout << "\nThe result is: ";
 		triangle.giveResult();
-		cout << "square centimeters (sq.cm)\n";
+		cout << " square centimeters (sq.cm)\n";
 		break;
 	}
 	cout << endl;
