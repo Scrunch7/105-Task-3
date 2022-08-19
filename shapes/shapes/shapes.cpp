@@ -9,6 +9,7 @@ int select = 0;
 enum { SQUARE = 1, RECTANGLE, TRIANGLE, CIRCLE, EXIT };
 void menu();
 
+
 //parent class
 class Shapes {
 
@@ -114,6 +115,8 @@ public:
 	}
 
 	//calculating the parameter
+	// --NOTE TO SELF-- for triangle
+	//Perimeter = width + height + sqrt[ (h*h) + (w*w) ]
 	double calculatePerimeter(double height, double width) {
 		double result, hypotenuse = 0;
 		hypotenuse = (height * height) + (width * width);
